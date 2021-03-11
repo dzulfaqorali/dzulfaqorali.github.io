@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DzStore - Cart Product 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/logo-usaha.png" width="125px"> 
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="products.html">
+                <img src="Images/cart1.png" width="30px" height="30px">
+               </a>
+           <img src="Images/menu.png" width="30px" height="30px" class="menu-icon" onclick=" menutoggle()">
+        </div> 
+    </div>
+<!--------cart items details-------->
+<div class="small-container cart-page">
+    <table class="table_jessy" align="center">
+        <tr>
+			<th>Product Picture</th>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Must be Pay</th>
+		</tr>
+        <tr>
+			<td>
+                <div class="cart-info">
+                    <div class="cart-image">
+                        <a href="product-details-8.html">
+                            <img src="Images/product-8.jpg">
+                        </a>
+                    </div>
+                <div>
+            </td>
+			<td>
+                <p>Black Bomber Jacket by FILA</p>
+            </td>
+			<td>
+                <small>Rp.2.000.000,00 + 10% tax</small>
+            </td>
+            <div class="input-hasil">
+                <td><input type="text" id="Navy_Blue_Sweater_by_FILA" onkeyup="hitungNavyBlueSweaterbyFILA()"></td>
+			    <td><input type="text" id="hasil_Navy_Blue_Sweater_by_FILA" placeholder="-" disabled=""></td>
+            </div>
+		</tr>
+        <tr>
+        </tr>
+    </table>
+    <script type="text/javascript">
+		function hitungNavyBlueSweaterbyFILA(angka,prefix)
+		{
+            
+			var nilai_Navy_Blue_Sweater_by_FILA = document.getElementById('Navy_Blue_Sweater_by_FILA').value;
+			if (nilai_Navy_Blue_Sweater_by_FILA == "")
+			{
+				document.getElementById('hasil_Navy_Blue_Sweater_by_FILA').value ="-";
+			}
+			else
+			{
+				var hasil_Navy_Blue_Sweater_by_FILA = nilai_Navy_Blue_Sweater_by_FILA * 2200000;
+				document.getElementById('hasil_Navy_Blue_Sweater_by_FILA').value = hasil_Navy_Blue_Sweater_by_FILA;
+			}
+		}
+    </script>
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>Rp. 2.000.000,00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>Rp. 200.000,00</td>
+        </tr>
+        <tr>
+            <td>Total Price</td>
+            <td>Rp. 2.200.000,00</td>
+        </tr>
+    </table>
+</div>
+</div>
+<!--------footer-------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and Ios Mobile Phone</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps?hl=in&gl=US">
+                        <img src="Images/play-store.png">
+                    </a>
+                    <a href="https://www.apple.com/app-store/">
+                        <img src="Images/app-store.png">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="Images/logo-usaha.png">
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © 2021 Dzulfaqor Ali . All Rights Reserved</p>
+    </div>
+</div>
+<!--------js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
