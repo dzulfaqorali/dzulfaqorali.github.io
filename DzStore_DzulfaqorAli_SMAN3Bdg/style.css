@@ -56,6 +56,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(113, 117, 113);
 }
 .navbar{
     display: flex;
@@ -76,10 +77,10 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 p{
-    color: #555; 
+    color: rgb(255, 255, 255); 
 }
 .container {
     max-width: 1300px;
@@ -125,7 +126,7 @@ p{
      color: #ff4331;
  }
  .col-2 .col-2-write p{
-     color: #606163;
+     color: #000000;
      line-height: 22px;
  }
  .info{
@@ -138,7 +139,7 @@ p{
     margin-bottom: 20px;
  }
  .info p{
-     color: #606163;
+     color: #020202;
      line-height: 22px;
  }
  .btn1 {
@@ -181,7 +182,7 @@ p{
 }
 .social-links a{
     font-size: 30px;
-    color: #606163;
+    color: #ffffff;
     margin-right: 20px;
     margin-top: 20px;
 }
@@ -244,7 +245,7 @@ p{
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: rgb(253, 253, 253);
 }
 .title::after{
     content: '';
@@ -258,7 +259,7 @@ p{
     transform: translateX(-50%);
 }
 h4{
-color: #555;
+color: rgb(255, 255, 255);
 font-weight: normal;
 }
 .col-4 p{
@@ -280,7 +281,7 @@ font-weight: normal;
     padding: 50px;
 }
 small{
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 /*--------testimonial--------*/
  .testimonial{
@@ -308,11 +309,11 @@ transition: transform 0.5s;
 .col-3 p{
     font-size: 12px;
     margin: 12px 0;
-    color: #777;
+    color: rgb(255, 255, 255);
 }
 .testimonial .col-3 h3{
     font-weight: 600;
-    color: #555;
+    color: rgb(255, 255, 255);
     font-size: 16px;
 }
 /*--------brands--------*/
@@ -350,7 +351,7 @@ section{
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background: rgba(192,192,192,0.3);
+	background: rgba(252, 250, 250, 0.3);
 	bottom: 40px;
 	right: 50px;
 	text-decoration: none;
